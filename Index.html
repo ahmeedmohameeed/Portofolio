@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portofolio</title>
+	<style type="text/css">
+		{
+	margin:0rem;
+	padding: 0rem; 
+}
+
+.lgo{
+	background: url(img/tx.jpg);
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.lgo h1{
+	position: absolute;
+	top: 35%;
+	left: 12%;
+	cursor: pointer;
+	display: block;
+	width: 5%;
+	background: linear-gradient(to right , black,grey);
+	border:0;
+	outline: none;
+	border-radius: 10px;
+	color: silver;
+}
+.lgo h2{
+	position: absolute;
+	top: 43%;
+	left: 15%;
+	font-size: 33px;
+	cursor: pointer;
+	display: block;
+	width: 20%;
+	background: linear-gradient(to right ,black ,grey);
+	border:0;
+	outline: none;
+	border-radius: 10px;
+	color: silver;
+}
+.lgo h3{
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	font-size: 40px;
+	width: 20%;
+	background: linear-gradient(to right ,black ,grey);
+	border:0;
+	outline: none;
+	border-radius: 10px;
+	color: silver;
+}
+
+
+.navbar ul{
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.navbar ul{
+	margin-top: 5px;
+}
+.navbar ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 5 8px;
+	line-height: 60px;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent ;
+	transition: 0.5s ease;
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.about h1,
+.Services h1,
+.contact h1,
+.work h1{
+	color: #707070;
+}
+
+li{
+	list-style: none;
+	margin-left: 30px;
+}
+a{
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+	transform: translate(-50%);
+}
+.about h1,
+.work h1{
+	font-size: 10rem;
+	z-index: 0;
+	opacity: .1;
+}
+
+.about p{
+	font-size: 30px;
+}
+
+
+.about,
+.work,
+.Services,
+.contact{
+	background-color:#252627;
+}
+
+.about-info{
+	max-width: 900px
+	background-color: #252627;
+	box-shadow: 0 0 1.2rem rgba(0,0,0,0.25);
+	padding: 50px;
+	position: relative;
+	top: -70px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%);
+	z-index: 1;
+}
+.Services{
+	height: 100vh;
+}
+
+.Services h1,
+.contact h1{
+	text-align: right;
+	font-size: 10rem;
+	opacity: .1;
+}
+
+.Services-info{
+	font-size: 1.4rem;
+	color: #BEBEBE;
+	max-width: 800px;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%);
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.Services .card-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+}
+
+.Services .card-wrapper .card{
+	background: #707070;
+	padding: 1rem 0rem;
+	position: relative;
+	text-align: center;
+}
+
+.Services .card-wrapper .card h2{
+	font-weight: 200;
+	font-size: 1.3rem;
+	margin-bottom: 0.5rem;
+}
+.Services .card-wrapper .card p{
+	font-family: monospace;
+	color: silver;
+	line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+.work-cat{
+	height:80%;
+}
+
+.work h1{
+	text-align: left;
+}
+
+.work-ca button{
+	text-transform: capitalize;
+	border:3px solid #ED5565;
+	padding: 15px 30px;
+	border-radius: 50px;
+	color: #ED5565;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	background-color: #252627;
+	outline: none;
+	cursor: pointer;
+
+}
+
+div[class^='cat-']{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 20px;
+}
+
+.work a{
+	justify-content: center;
+	position: relative;
+	display: inline-block;
+}
+.work-cat .active{
+	background-color: #ED5565;
+}
+
+button.active{
+	color: #fff;
+}
+
+.work a img{
+	width: 300px;
+	display: inline-block;
+	margin-left:50%;
+}
+
+div.hideCat {
+	display: none;
+}
+
+.showCat {
+	display: block;
+}
+
+
+.contact {
+	margin-top: 50px;
+}
+
+form input,
+form textarea{
+	display: block;
+	width: 500px;
+	padding: 20px;
+	background-color: #252627;
+	border:3px solid #707070;
+	margin: 20px 0;
+	outline: none;
+	font-size: 1.3rem;
+	color: #fff;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%);
+}
+form input:last-child {
+	width: 150px;
+	background-color: #ED5565;
+	border:none;
+	cursor: pointer;
+}
+
+footer hr{
+	border: 2px solid #707070;
+	margin-top: 80px;
+}
+footer p{
+	text-align: center;
+	color: #707070;
+	font-size: 1.3rem;
+	padding: 30px 0;
+}
+
+	</style>
+
+</head>
+<body>
+	<main>
+
+<div class="lgo">
+		<h1>I'm</h1>
+		<h2>Ahmed Muhamed</h2>
+		<h3>Web Desinger</h3>
+	<nav class="navbar">
+		<ul>
+			<li><a href="#about">About me</a></li>
+			<li><a href="#Services">Services</a></li>
+			<li><a href="#work">My work</a></li>
+			<li><a href="#contact">Contact me</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="about" id="about">
+		<h1>About</h1>
+		<div class="about-info">
+			<p>I am a student in college , i am studying Business Information Technology, been doing  web design for 2 years now </p>
+		</div>
+	
+
+    <div class="Services" id="Services">
+	    <h1>Services</h1>
+	   <p class="Services-info">Provide high stander clean website for your business solution</p>
+	  <div class="card-wrapper">
+	   	<div class="card">
+	   		<h2>Graphic Desgin</h2>
+	   		<p>There are many variations of passages of but tha majority have suffered alteration in some form.</p>
+	   	</div>
+
+	   		<div class="card">
+	   		<h2>Web Development</h2>
+	   		<p>There are many variations of passages of but tha majority have suffered alteration in some form.</p>
+	   	</div>
+
+	   		<div class="card">
+	   		<h2>Web Design</h2>
+	   		<p>There are many variations of passages of but tha majority have suffered alteration in some form.</p>
+	   	</div>
+	   	
+	  </div>
+   </div>
+
+
+
+   <div class="work" id="work">
+	    <h1>Work</h1>
+	  <div class="work-ca">
+		<button id="designing" class="active">web Designing</button>
+		<button id="animation">Web Animation</button>
+		<button id="project">Projects</button>
+	</div>
+	<div class="cat-designing showCat">
+		<a href=""><img src="img/img0.png"></a>
+		<a href=""><img src="img/img1.jpg"></a>
+		<a href=""><img src="img/img2.jpg"></a>
+		<a href=""><img src="img/img3.jpg"></a>
+	</div>
+
+
+</div>
+
+<div class="contact" id="contact">
+	<h1>Contact me</h1>
+	<form action="" class="form">
+			<input type="text" id="name" name="name" placeholder="Enter your name.." required>
+
+			<input type="email" id="email" name="email" placeholder="Enter your email.." required>
+
+			<textarea name="Message" id="subject" cols="8" rows="8" placeholder="Write your message.."></textarea>
+			<input type="Submit" value="send message..">
+		</form>
+</div>
+<footer>
+	<p>2020 copyright</p>
+</foote>
+</main>
+
+</body>
+</html>
